@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Nick Lottery</title>
+    <meta charset="utf-8" />
+    <link href = "cssfiles/site.css" rel = "stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div id = "logo">
+      <img src = "imgs/nodejs.png" />
+      <div id = "text">
+        <div style = "font-size:65px; color: lawngreen;">The Nick Lottery</div>
+        <div style = "font-size:23px;">Zobacz czy twój nick zwycięży w losowaniu!</div>
+      </div>
+    </div>
+
+    <div id = "content">
+      <% if(exists){ %>
+        <h2>Już zarejestrowaeś nick <%= nick %>!</h2>
+      <% } else { %>
+        <h2>Hej! Właśnie zarejestrowałeś nick: <%= nick %>!</h2>
+        <div style = "margin: 0 auto;"></div>
+      <% } %>
+    </div>
+  </body>
+</html>
